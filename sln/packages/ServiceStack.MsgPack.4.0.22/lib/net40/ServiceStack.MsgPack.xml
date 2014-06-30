@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>ServiceStack.MsgPack</name>
+    </assembly>
+    <members>
+        <member name="M:ServiceStack.MsgPack.MsgPackFormat.HandleException(System.Exception,System.Type)">
+            <summary>
+            MsgPack throws an exception for empty DTO's - normalizing the behavior to 
+            follow other types and return an empty instance.
+            </summary>
+            <param name="ex"></param>
+            <param name="type"></param>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
