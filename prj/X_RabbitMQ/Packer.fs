@@ -3,7 +3,6 @@
 open System
 open System.Text
 open System.Reflection
-open ProtoBuf
 open ServiceStack
 open ServiceStack.Text
 open ServiceStack.ProtoBuf

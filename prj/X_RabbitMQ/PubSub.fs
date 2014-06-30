@@ -7,7 +7,6 @@ open System.Diagnostics
 open System.Reflection
 open System.Text.RegularExpressions
 open RabbitMQ.Client
-open ProtoBuf
 open ServiceStack
 open ServiceStack.Text
 open ServiceStack.ProtoBuf
