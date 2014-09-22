@@ -1,4 +1,4 @@
-﻿namespace bigwig.X_RabbitMQ
+﻿namespace FSharp.Control.RabbitMQ
 
 open System
 open System.Text
@@ -7,8 +7,8 @@ open ServiceStack
 open ServiceStack.Text
 open ServiceStack.ProtoBuf
 open ServiceStack.MsgPack
-open bigwig.X_RabbitMQ
-open bigwig.X_FSharp
+open FSharp.Control.RabbitMQ
+open FSharp.Control.X_FSharp
 open System.IO.Compression
 open System.IO
 

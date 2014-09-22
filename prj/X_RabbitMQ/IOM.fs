@@ -1,4 +1,4 @@
-﻿namespace bigwig.X_RabbitMQ
+﻿namespace FSharp.Control.RabbitMQ
 
 open System
 

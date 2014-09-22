@@ -1,9 +1,9 @@
-﻿namespace bigwig.X_RabbitMQ
+﻿namespace FSharp.Control.RabbitMQ
 
 open System
 open System.Text
 open System.Text.RegularExpressions
-open bigwig.X_FSharp
+open FSharp.Control.X_FSharp
 
 module Parse =
 

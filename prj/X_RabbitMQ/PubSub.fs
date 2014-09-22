@@ -1,4 +1,4 @@
-﻿namespace bigwig.X_RabbitMQ
+﻿namespace FSharp.Control.RabbitMQ
 
 open System
 open System.Text
@@ -11,9 +11,9 @@ open ServiceStack
 open ServiceStack.Text
 open ServiceStack.ProtoBuf
 open ServiceStack.MsgPack
-open bigwig.X_RabbitMQ
-open bigwig.X_RabbitMQ.PackXPair
-open bigwig.X_FSharp
+open FSharp.Control.RabbitMQ
+open FSharp.Control.RabbitMQ.PackXPair
+open FSharp.Control.X_FSharp
 open FactoryHelper
 open DefHelper
 open DefRef

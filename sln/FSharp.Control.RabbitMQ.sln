@@ -1,15 +1,15 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 2013
-VisualStudioVersion = 12.0.30501.0
+VisualStudioVersion = 12.0.30723.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "bigwig.X_FSharp", "..\prj\X_FSharp\bigwig.X_FSharp.fsproj", "{862B4551-2873-4A59-8193-D3F9339E1F3A}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FSharp.Control.RabbitMQ.X_FSharp", "..\prj\X_FSharp\FSharp.Control.RabbitMQ.X_FSharp.fsproj", "{862B4551-2873-4A59-8193-D3F9339E1F3A}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "bigwig.X_RabbitMQ", "..\prj\X_RabbitMQ\bigwig.X_RabbitMQ.fsproj", "{E7CA3360-5215-4891-9F28-AD533247687A}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FSharp.Control.RabbitMQ", "..\prj\X_RabbitMQ\FSharp.Control.RabbitMQ.fsproj", "{E7CA3360-5215-4891-9F28-AD533247687A}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "bigwig.X_RabbitMQ.mgmt", "..\prj\X_RabbitMQ.mgmt\bigwig.X_RabbitMQ.mgmt.fsproj", "{67B7F312-4032-452C-8C76-2B69B8291A3D}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FSharp.Control.RabbitMQ.mgmt", "..\prj\X_RabbitMQ.mgmt\FSharp.Control.RabbitMQ.mgmt.fsproj", "{67B7F312-4032-452C-8C76-2B69B8291A3D}"
 EndProject
-Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "bigwig.X_RabbitMQ.Test", "..\tst\X_RabbitMQ.Test\bigwig.X_RabbitMQ.Test.fsproj", "{4ED573CD-2BF1-4DE2-AF32-77285FA5DADC}"
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "FSharp.Control.RabbitMQ.Test", "..\tst\X_RabbitMQ.Test\FSharp.Control.RabbitMQ.Test.fsproj", "{4ED573CD-2BF1-4DE2-AF32-77285FA5DADC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

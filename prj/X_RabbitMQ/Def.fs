@@ -1,12 +1,12 @@
-﻿namespace bigwig.X_RabbitMQ
+﻿namespace FSharp.Control.RabbitMQ
 
 open System
-open bigwig.X_FSharp
-open bigwig.X_RabbitMQ
+open FSharp.Control.X_FSharp
+open FSharp.Control.RabbitMQ
 open RabbitMQ.Client
 open System.Collections.Generic
-open bigwig.X_RabbitMQ
-open bigwig.X_FSharp
+open FSharp.Control.RabbitMQ
+open FSharp.Control.X_FSharp
 
 module Nskk =
   // TODO: add nskk based searchs to the searchSpec format

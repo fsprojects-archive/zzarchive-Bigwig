@@ -9,20 +9,20 @@
 #r"bin/debug/ServiceStack.MsgPack.dll"
 #r"bin/debug/ServiceStack.Text.dll"
 #r"bin/debug/ServiceStack.Client.dll"
-#r"bin/debug/bigwig.X_FSharp.dll"
-#load"../X_RabbitMQ/QParse.fs"
-#load"../X_RabbitMQ/IOM.fs"
-#load"../X_RabbitMQ/OM.fs"
-#load"../X_RabbitMQ/Register.fs"
-#load"../X_RabbitMQ/DefMatch.fs"
-#load"../X_RabbitMQ/DefCache.fs"
-#load"../X_RabbitMQ/Def.fs"
-#load"../X_RabbitMQ/Helpers.fs" 
-#load"../X_RabbitMQ/Context.fs"
-#load"../X_RabbitMQ/Factory.fs" 
-#load"../X_RabbitMQ/Packer.fs" 
-#load"../X_RabbitMQ/PubSub.fs" 
-#load"../X_RabbitMQ/X_Model.fs"
+#r"bin/debug/FSharp.Control.X_FSharp.dll"
+#load"../RabbitMQ/QParse.fs"
+#load"../RabbitMQ/IOM.fs"
+#load"../RabbitMQ/OM.fs"
+#load"../RabbitMQ/Register.fs"
+#load"../RabbitMQ/DefMatch.fs"
+#load"../RabbitMQ/DefCache.fs"
+#load"../RabbitMQ/Def.fs"
+#load"../RabbitMQ/Helpers.fs" 
+#load"../RabbitMQ/Context.fs"
+#load"../RabbitMQ/Factory.fs" 
+#load"../RabbitMQ/Packer.fs" 
+#load"../RabbitMQ/PubSub.fs" 
+#load"../RabbitMQ/X_Model.fs"
 #load"Meta.Fixture1.fs"
 open System
 open System.Collections.Generic
@@ -32,15 +32,15 @@ open System.Text
 open System.Text.RegularExpressions
 open RabbitMQ.Client
 open RabbitMQ.Client.Events
-open bigwig.X_FSharp
+open FSharp.Control.X_FSharp
 
-open bigwig.X_RabbitMQ.Meta
-open bigwig.X_RabbitMQ
+open FSharp.Control.RabbitMQ.Meta
+open FSharp.Control.RabbitMQ
 
-//open bigwig.X_RabbitMQ.Meta.Fixture
+//open FSharp.Control.RabbitMQ.Meta.Fixture
 open RabbitMQ.Client.MessagePatterns
 open System.Threading
-open bigwig.X_RabbitMQ
+open FSharp.Control.RabbitMQ
 
 module Thread =
   let start x = new Thread(ThreadStart(x))
@@ -75,7 +75,7 @@ module Helper =
     | None -> failwith msg
 
 open Helper
-open bigwig.X_RabbitMQ.Meta.Fixture
+open FSharp.Control.RabbitMQ.Meta.Fixture
 module testTypeGuidScheme = 
   let testGUID() =
     let tnskk = TestNskkGetter()

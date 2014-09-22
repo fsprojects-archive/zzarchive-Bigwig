@@ -1,10 +1,10 @@
-﻿namespace bigwig.X_RabbitMQ.Meta
+﻿namespace FSharp.Control.RabbitMQ.Meta
 
 open System
 open System.Collections.Generic
 open RabbitMQ.Client
-open bigwig.X_FSharp
-open bigwig.X_RabbitMQ
+open FSharp.Control.X_FSharp
+open FSharp.Control.RabbitMQ
 open DefRef
 
 module Bag = 
@@ -57,7 +57,7 @@ module Helper =
     let routeTo = RPsToPAddr routingPairs tag
     let _type = 
       match Register.getExchange <| Some routeTo.exchange with
-      | None -> raise<|bigwig.X_RabbitMQ.NoSuchExchangeInRegister(sprintf "can not find exchange '%s' in the register" routeTo.exchange)
+      | None -> raise<|FSharp.Control.RabbitMQ.NoSuchExchangeInRegister(sprintf "can not find exchange '%s' in the register" routeTo.exchange)
       | Some exch->exch._type
     RabbitMQ.Client.PublicationAddress(_type.toString(), routeTo.exchange, routeTo.routingKey)
 
@@ -151,8 +151,8 @@ module Helper =
 open System
 open System.Collections.Generic
 open RabbitMQ.Client
-open bigwig.X_FSharp
-open bigwig.X_RabbitMQ
+open FSharp.Control.X_FSharp
+open FSharp.Control.RabbitMQ
 
 module BasicProperties =
 

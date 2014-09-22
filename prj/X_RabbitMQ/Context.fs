@@ -1,8 +1,8 @@
-﻿namespace bigwig.X_RabbitMQ
+﻿namespace FSharp.Control.RabbitMQ
 
 open System
-open bigwig.X_RabbitMQ
-open bigwig.X_FSharp
+open FSharp.Control.RabbitMQ
+open FSharp.Control.X_FSharp
 open DefHelper
 
 /// NB: Charset attribute get blended into this older form.

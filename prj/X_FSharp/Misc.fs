@@ -1,5 +1,5 @@
 ﻿/// FSharp extension namespace
-namespace bigwig.X_FSharp
+namespace FSharp.Control.X_FSharp
 
 open System
 open System.Collections

@@ -5,13 +5,13 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>67b7f312-4032-452c-8c76-2b69b8291a3d</ProjectGuid>
+    <ProjectGuid>862b4551-2873-4a59-8193-d3f9339e1f3a</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>X_RabbitMQ.mgmt</RootNamespace>
-    <AssemblyName>bigwig.X_RabbitMQ.mgmt</AssemblyName>
+    <RootNamespace>X_FSharp</RootNamespace>
+    <AssemblyName>FSharp.Control.X_FSharp</AssemblyName>
     <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <TargetFSharpCoreVersion>4.3.1.0</TargetFSharpCoreVersion>
-    <Name>bigwig.X_RabbitMQ.mgmt</Name>
+    <Name>FSharp.Control.RabbitMQ.X_FSharp</Name>
     <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -21,8 +21,9 @@
     <Tailcalls>false</Tailcalls>
     <OutputPath>bin\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
-    <WarningLevel>3</WarningLevel>
-    <DocumentationFile>bin\Debug\X_RabbitMQ.mgmt.XML</DocumentationFile>
+    <WarningLevel>5</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
     <PlatformTarget>x86</PlatformTarget>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -32,7 +33,7 @@
     <OutputPath>bin\Release\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <WarningLevel>3</WarningLevel>
-    <DocumentationFile>bin\Release\X_RabbitMQ.mgmt.XML</DocumentationFile>
+    <DocumentationFile>bin\Release\X_FSharp.XML</DocumentationFile>
   </PropertyGroup>
   <PropertyGroup>
     <MinimumVisualStudioVersion Condition="'$(MinimumVisualStudioVersion)' == ''">11</MinimumVisualStudioVersion>
@@ -51,39 +52,20 @@
   </Choose>
   <Import Project="$(FSharpTargetsPath)" />
   <ItemGroup>
-    <None Include="info.md" />
-    <Compile Include="OM.fs" />
-    <Compile Include="Parameters.fs" />
-    <Compile Include="Policy.fs" />
-    <Compile Include="Shovel.fs" />
-    <Compile Include="Federation.fs" />
-    <None Include="app.config" />
-    <None Include="packages.config" />
+    <Compile Include="Misc.fs" />
+    <Compile Include="X_Type.fs" />
+    <Compile Include="TypeList.fs" />
+    <Compile Include="X_Type2.fs" />
+    <Compile Include="Interface.fs" />
+    <Compile Include="NS.fs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="mscorlib" />
     <Reference Include="FSharp.Core, Version=$(TargetFSharpCoreVersion), Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
       <Private>True</Private>
     </Reference>
-    <Reference Include="RabbitMQ.Client">
-      <HintPath>..\..\sln\packages\RabbitMQ.Client.3.3.2\lib\net30\RabbitMQ.Client.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="RabbitMQ.ServiceModel">
-      <HintPath>..\..\sln\packages\RabbitMQ.ServiceModel.3.3.2\lib\net30\RabbitMQ.ServiceModel.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
-    <Reference Include="System.Numerics" />
-    <Reference Include="System.ServiceModel" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\X_RabbitMQ\bigwig.X_RabbitMQ.fsproj">
-      <Name>bigwig.X_RabbitMQ</Name>
-      <Project>{e7ca3360-5215-4891-9f28-ad533247687a}</Project>
-      <Private>True</Private>
-    </ProjectReference>
   </ItemGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

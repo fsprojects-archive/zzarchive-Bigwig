@@ -5,13 +5,13 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>e7ca3360-5215-4891-9f28-ad533247687a</ProjectGuid>
+    <ProjectGuid>4ed573cd-2bf1-4de2-af32-77285fa5dadc</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>clx.mq.X_RabbitMQ</RootNamespace>
-    <AssemblyName>bigwig.X_RabbitMQ</AssemblyName>
+    <RootNamespace>X_RabbitMQ.Test</RootNamespace>
+    <AssemblyName>bigwig.X_RabbitMQ.Test</AssemblyName>
     <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <TargetFSharpCoreVersion>4.3.1.0</TargetFSharpCoreVersion>
-    <Name>bigwig.X_RabbitMQ</Name>
+    <Name>FSharp.Control.RabbitMQ.Test</Name>
     <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
@@ -22,8 +22,7 @@
     <OutputPath>bin\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <WarningLevel>3</WarningLevel>
-    <DocumentationFile>
-    </DocumentationFile>
+    <DocumentationFile>bin\Debug\X_RabbitMQ.Test.XML</DocumentationFile>
     <PlatformTarget>x86</PlatformTarget>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
@@ -33,27 +32,15 @@
     <OutputPath>bin\Release\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>
     <WarningLevel>3</WarningLevel>
-    <DocumentationFile>bin\Release\clx.mq.X_RabbitMQ.XML</DocumentationFile>
+    <DocumentationFile>bin\Release\X_RabbitMQ.Test.XML</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="FSharp.Configuration">
-      <HintPath>..\..\sln\packages\FSharp.Configuration.0.2.2\lib\net40\FSharp.Configuration.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="mscorlib" />
     <Reference Include="FSharp.Core, Version=$(TargetFSharpCoreVersion), Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
       <Private>True</Private>
     </Reference>
     <Reference Include="MsgPack">
       <HintPath>..\..\sln\packages\MsgPack.Cli.0.4.4\lib\net40-client\MsgPack.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="Newtonsoft.Json">
-      <HintPath>..\..\sln\packages\Newtonsoft.Json.6.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
-    <Reference Include="protobuf-net">
-      <HintPath>..\..\..\..\..\RTK\LIB\nuget\protobuf-net.2.0.0.668\lib\net40\protobuf-net.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="RabbitMQ.Client">
@@ -85,47 +72,32 @@
       <Private>True</Private>
     </Reference>
     <Reference Include="ServiceStack.ProtoBuf">
-      <HintPath>..\..\sln\packages\ServiceStack.ProtoBuf.Signed.4.0.22\lib\net40\ServiceStack.ProtoBuf.dll</HintPath>
+      <HintPath>..\..\sln\packages\ServiceStack.ProtoBuf.4.0.22\lib\net40\ServiceStack.ProtoBuf.dll</HintPath>
       <Private>True</Private>
     </Reference>
     <Reference Include="ServiceStack.Text">
       <HintPath>..\..\sln\packages\ServiceStack.Text.4.0.22\lib\net40\ServiceStack.Text.dll</HintPath>
       <Private>True</Private>
     </Reference>
-    <Reference Include="SharpYaml">
-      <HintPath>..\..\sln\packages\FSharp.Configuration.0.2.2\lib\net40\SharpYaml.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Numerics" />
     <Reference Include="System.ServiceModel" />
     <Reference Include="System.Web" />
-    <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="QParse.fs" />
-    <Compile Include="IOM.fs" />
-    <Compile Include="OM.fs" />
-    <Compile Include="Register.fs" />
-    <Compile Include="DefMatch.fs" />
-    <Compile Include="DefCache.fs" />
-    <Compile Include="Def.fs" />
-    <Compile Include="Helpers.fs" />
-    <Compile Include="Context.fs" />
-    <Compile Include="Factory.fs" />
-    <Compile Include="Packer.fs" />
-    <Compile Include="PubSub.fs" />
-    <Compile Include="X_Model.fs" />
     <None Include="packages.config" />
     <None Include="app.config" />
-    <Compile Include="Meta.Fixture1.fs" />
-    <None Include="Meta.Fixture.fsx" />
-    <None Include="onResolvingTypes.fsx" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\X_FSharp\bigwig.X_FSharp.fsproj">
-      <Name>bigwig.X_FSharp</Name>
+    <ProjectReference Include="..\..\prj\X_FSharp\FSharp.Control.RabbitMQ.X_FSharp.fsproj">
+      <Name>FSharp.Control.RabbitMQ.X_FSharp</Name>
       <Project>{862b4551-2873-4a59-8193-d3f9339e1f3a}</Project>
+      <Private>True</Private>
+    </ProjectReference>
+    <ProjectReference Include="..\..\prj\X_RabbitMQ\FSharp.Control.RabbitMQ.fsproj">
+      <Name>FSharp.Control.RabbitMQ</Name>
+      <Project>{e7ca3360-5215-4891-9f28-ad533247687a}</Project>
       <Private>True</Private>
     </ProjectReference>
   </ItemGroup>

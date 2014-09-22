@@ -1,7 +1,7 @@
-﻿namespace bigwig.X_FSharp
+﻿namespace FSharp.Control.X_FSharp
 
 open System
-open bigwig.X_FSharp.List
+open FSharp.Control.X_FSharp.List
 open System.Runtime.CompilerServices
 
 // TODO: currently can't access any of these methods in the type extension format

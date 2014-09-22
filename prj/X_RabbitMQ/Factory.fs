@@ -1,4 +1,4 @@
-﻿namespace bigwig.X_RabbitMQ
+﻿namespace FSharp.Control.RabbitMQ
 
 open System
 open System.IO
@@ -9,14 +9,14 @@ open System.Collections
 open Microsoft.FSharp.Reflection
 open RabbitMQ
 open RabbitMQ.Client
-open bigwig.X_RabbitMQ
-open bigwig.X_FSharp
-open bigwig.X_RabbitMQ.DefHelper
+open FSharp.Control.RabbitMQ
+open FSharp.Control.X_FSharp
+open FSharp.Control.RabbitMQ.DefHelper
 open System.Runtime.CompilerServices
 
 module IAmqpExtensionM =
 
-  let GetArguments (this:bigwig.X_RabbitMQ.IAmqpExtension) (passive:bool) (tag:string) =
+  let GetArguments (this:FSharp.Control.RabbitMQ.IAmqpExtension) (passive:bool) (tag:string) =
 
     let d = new Dictionary<string,obj>() 
 

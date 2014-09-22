@@ -1,8 +1,8 @@
-﻿namespace bigwig.X_FSharp
+﻿namespace FSharp.Control.X_FSharp
 
 open System
-open bigwig.X_FSharp
-open bigwig.X_FSharp.List
+open FSharp.Control.X_FSharp
+open FSharp.Control.X_FSharp.List
 open System.Runtime.CompilerServices
 
 [<Extension>]

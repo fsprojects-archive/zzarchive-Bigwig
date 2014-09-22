@@ -1,18 +1,18 @@
-﻿namespace bigwig.X_RabbitMQ.Meta.Fixture
+﻿namespace FSharp.Control.RabbitMQ.Meta.Fixture
 
 open System
 open System.Text
 open System.Collections.Generic
 open System.Diagnostics
 open System.Reflection
-open bigwig.X_FSharp
-open bigwig.X_RabbitMQ
+open FSharp.Control.X_FSharp
+open FSharp.Control.RabbitMQ
 
 // members and classes may clash in our simple nskk structure.  We do not strictly enforce this.
 
-type X_RabbitMQ() =
+type RabbitMQ() =
   let x = "x"
-  member this.X_RabbitMQ() = "x"
+  member this.RabbitMQ() = "x"
 
 /// Connection meta store
 [<CxDef(HostName = "localhost", Nskk="a.b.RabbitMQ.c")>]

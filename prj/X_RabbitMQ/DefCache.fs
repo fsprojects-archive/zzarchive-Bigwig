@@ -1,9 +1,9 @@
-﻿namespace bigwig.X_RabbitMQ
+﻿namespace FSharp.Control.RabbitMQ
 
 open System
 open System.Collections.Generic
-open bigwig.X_RabbitMQ
-open bigwig.X_FSharp
+open FSharp.Control.RabbitMQ
+open FSharp.Control.X_FSharp
 
 module DefCache =
 

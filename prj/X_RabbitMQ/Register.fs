@@ -1,4 +1,4 @@
-﻿namespace bigwig.X_RabbitMQ
+﻿namespace FSharp.Control.RabbitMQ
 
 exception GlobalExtensionNotFound of string
 exception QueueAlreadyRegistered of string
@@ -15,7 +15,7 @@ exception BindingNotFound of string
 module RegisterHelper =
   open System
   open System.Collections.Generic
-  open bigwig.X_RabbitMQ
+  open FSharp.Control.RabbitMQ
 
   let registerExchanges (exchanges0 : ExDef list) (_to : Dictionary<string, ExRegEntry>) (passive:bool) =
     exchanges0 
@@ -58,7 +58,7 @@ module Register =
 
   open System
   open System.Collections.Generic
-  open bigwig.X_RabbitMQ
+  open FSharp.Control.RabbitMQ
 
   /// dsc: various custom queue, binding, exchange, channel, consumer, publisher settings that may be set
   /// this is a global cach of XPair items (eg. settings for queue, binding, exchange, channel, consumer, and publisher)

@@ -1,7 +1,7 @@
-﻿namespace bigwig.X_FSharp
+﻿namespace FSharp.Control.X_FSharp
 
 open System
-open bigwig.X_FSharp
+open FSharp.Control.X_FSharp
 
 module TypeList =
 

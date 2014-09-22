@@ -1,6 +1,6 @@
 ﻿/// our RabbitMQ correlated object model reside here
 
-namespace bigwig.X_RabbitMQ
+namespace FSharp.Control.RabbitMQ
 
 open System
 open System.IO
@@ -9,8 +9,8 @@ open System.Reflection
 open System.Collections
 open System.Collections.Generic
 open RabbitMQ.Client
-open bigwig.X_RabbitMQ
-open bigwig.X_FSharp
+open FSharp.Control.RabbitMQ
+open FSharp.Control.X_FSharp
 
 exception UnknownKey of string
 exception EmptyRoutingKey of string
@@ -1390,7 +1390,7 @@ type MatchDef(when_,grp_) =
 
 module DefHelper =
 
-  open bigwig.X_FSharp
+  open FSharp.Control.X_FSharp
   
   let filterMQAttributes(attributes : Attribute list) =
     let xpairType = typedefof<XPair>
