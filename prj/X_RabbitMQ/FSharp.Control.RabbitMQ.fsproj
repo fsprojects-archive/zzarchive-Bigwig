@@ -121,6 +121,7 @@
     <Compile Include="Meta.Fixture1.fs" />
     <None Include="Meta.Fixture.fsx" />
     <None Include="onResolvingTypes.fsx" />
+    <None Include="README.md" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\X_FSharp\FSharp.Control.RabbitMQ.X_FSharp.fsproj">
