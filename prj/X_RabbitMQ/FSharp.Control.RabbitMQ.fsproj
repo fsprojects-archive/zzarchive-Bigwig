@@ -8,7 +8,7 @@
     <ProjectGuid>e7ca3360-5215-4891-9f28-ad533247687a</ProjectGuid>
     <OutputType>Library</OutputType>
     <RootNamespace>clx.mq.RabbitMQ</RootNamespace>
-    <AssemblyName>FSharp.Control.RabbitMQ</AssemblyName>
+    <AssemblyName>FSharp.Control.RabbitMQ.Experimental</AssemblyName>
     <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <TargetFSharpCoreVersion>4.3.1.0</TargetFSharpCoreVersion>
     <Name>FSharp.Control.RabbitMQ</Name>

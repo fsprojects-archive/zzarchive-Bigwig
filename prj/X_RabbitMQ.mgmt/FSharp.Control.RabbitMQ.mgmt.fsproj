@@ -8,7 +8,7 @@
     <ProjectGuid>67b7f312-4032-452c-8c76-2b69b8291a3d</ProjectGuid>
     <OutputType>Library</OutputType>
     <RootNamespace>X_RabbitMQ.mgmt</RootNamespace>
-    <AssemblyName>bigwig.X_RabbitMQ.mgmt</AssemblyName>
+    <AssemblyName>bigwig.X_RabbitMQ.mgmt.Experimental</AssemblyName>
     <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <TargetFSharpCoreVersion>4.3.1.0</TargetFSharpCoreVersion>
     <Name>FSharp.Control.RabbitMQ.mgmt</Name>
