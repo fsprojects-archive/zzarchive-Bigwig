@@ -103,6 +103,9 @@
     <Reference Include="System.Xml.Linq" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="..\..\README.md">
+      <Link>README.md</Link>
+    </None>
     <Compile Include="QParse.fs" />
     <Compile Include="IOM.fs" />
     <Compile Include="OM.fs" />
@@ -121,7 +124,6 @@
     <Compile Include="Meta.Fixture1.fs" />
     <None Include="Meta.Fixture.fsx" />
     <None Include="onResolvingTypes.fsx" />
-    <None Include="README.md" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\X_FSharp\FSharp.Control.RabbitMQ.X_FSharp.fsproj">
