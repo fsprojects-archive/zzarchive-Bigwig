@@ -26,4 +26,13 @@ To Do
 * create queues, subscribe, and publish examples
 
 * stabilise configuration form (decorator / file / programatic).  
+ 
+
+Maintainer(s)
+-------------
+
+- [@sgtz](https://github.com/sgtz)
+
+The default maintainer account for projects under "fsprojects" is [@fsgit](https://github.com/fsgit) - F# Community Project Incubation Space (repo management)
+
 
