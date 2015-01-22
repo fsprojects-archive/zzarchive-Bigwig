@@ -1,3 +1,6 @@
+[![Issue Stats](http://issuestats.com/github/fsprojects/Bigwig/badge/issue)](http://issuestats.com/github/fsprojects/Bigwig)
+[![Issue Stats](http://issuestats.com/github/fsprojects/Bigwig/badge/pr)](http://issuestats.com/github/fsprojects/Bigwig)
+
 FSharp.Control.RabbitMQ  (working title: BigWig)
 ================================================
 
